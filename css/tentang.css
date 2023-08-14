@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,700;1,700&display=swap');
+
+:root {
+    --primary-color: rgb(181, 15, 15);
+  }
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-image: url('../properties/homepagebg.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.bungkus {
+    width: 80%;
+    margin: auto;
+    background-color: var(--primary-color);
+}
+
+.music-on {
+    display: none;
+}
+
+.btn-back, .btn-music {
+    color: var(--primary-color);
+}
+
+.tombol-tutup {
+    color: var(--primary-color);
+}
+.tombol-tutup:hover {
+    color: var(--primary-color);
+}
+
+.btn-back:hover, .btn-music:hover {
+    background-color: var(--primary-color);
+    color: #fff;
+}
+
+.card-title {
+    color: var(--primary-color);
+}
+
+.tombol-card {
+    background-color: var(--primary-color);
+    color: #fff;
+}
+.tombol-card:hover {
+    color: var(--primary-color);
+    background-color: #fff;
+    border: 1px solid var(--primary-color);
+}
+
+.modal-body, .modal-header, .modal-footer {
+    text-transform: capitalize;
+    background-color: var(--primary-color);
+  }
+
+.modal-footer button {
+    color: var(--primary-color);
+}
+
+
+@media screen and (min-width : 1420px){
+    .music-off {
+        font-size: 2rem;
+    }
+
+    .logoImage {
+        width: 400px;
+        height: 400px;
+    }
+}
+@media screen and (max-width : 768px){
+    .img {
+        height: 200px;
+    }
+    .card {
+        width: 300px;
+    }
+}
+@media screen and (max-width : 520px){
+    .img {
+        height: 150px;
+    }
+    .card {
+        width: 150px;
+    }
+
+    .card-title {
+        font-size: 1rem;
+    }
+}
+@media screen and (max-width : 320px){
+    .img {
+        height: 100px;
+    }
+    .card {
+        width: 120px;
+    }
+    .creator {
+        font-size: .7rem;
+    }
+
+    .logoImage {
+        width: 150px;
+        height: 150px;
+    }
+}
+@media screen and (max-width : 220px){
+    .img {
+        height: 80px;
+    }
+    .card {
+        width: 120px;
+    }
+    .creator {
+        font-size: .5rem;
+    }
+}
